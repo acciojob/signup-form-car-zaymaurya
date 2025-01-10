@@ -4,10 +4,73 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Car Signup Form</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+	    <h2>Car Signup Form</h2>
+	    <form action="#" method="post">
+			<div class="form-group">
+		        <label for="name">Name:</label>
+		        <input type="Text" id="name" name="name" placeholder="Name" required>
+			</div>
+
+			<div class="form-group">
+		        <label for="email">Email:</label>
+		        <input type="Email" id="email" name="email" placeholder="Email" required>
+		    </div>
+
+		    <div class="form-group genderGroup">
+				<label for="gender">Gender:</label>
+				<input type="Radio" id="gender_m" name="gender" value="male" required>
+				<label for="gender_m">Male</label>
+				<input type="Radio" id="gender_f" name="gender" value="female" required>
+				<label for="gender_f">Female</label>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="cars">Car Brands:</label>
+		        <select type="Select" id="cars" name="cars" required>
+			        <option value="">--Please choose an option--</option>
+			        <option value="toyota">Toyota</option>
+			        <option value="honda">Honda</option>
+			        <option value="bmw">BMW</option>
+			        <option value="tesla">Tesla</option>
+		        </select>
+			</div>
+
+		    <div class="form-group">
+		        <label for="age">Age:</label>
+		        <input type="Number" id="age" name="age" placeholder="Age" required>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="dob">DOB:</label>
+		        <input type="Date" id="dob" name="dob" required>
+		    </div>
+
+		    <div class="form-group">
+		        <label for="tel">Phone Number:</label>
+		        <input type="Tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+		    </div>
+
+		    <div class="form-group">
+		        <label for="password">Password:</label>
+			    <input type="Password" id="password" name="password" placeholder="Password" required>
+		    </div>
+
+			<div class="form-group tos">
+				<input type="Checkbox" id="tos" name="tos" required>
+				<label for="tos">I agree to the TOS</label>
+			</div>
+
+		    <div class="form-group">
+		        <button type="submit" class="submit-btn">Submit</button>
+		    </div>
+	    </form>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
